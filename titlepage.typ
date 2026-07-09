@@ -44,7 +44,7 @@
     ]
     #align(center + bottom)[
       #grid(
-        columns: (50%, 25%, 25%),
+        columns: (2fr, 1fr, 1fr),
         rows: 1.08cm,
         align: (left, center, center),
         ..by,
