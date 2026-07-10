@@ -8,8 +8,7 @@
     ),
   )
   set text(14pt, lang: "ru", font: "Times New Roman")
-  set par(justify: true)
-  doc
+  set par(justify: false)
 
   show figure.where(kind: image): set figure(
     supplement: [Рисунок],
@@ -20,14 +19,13 @@
   )
   set figure(numbering: "1")
   show figure.caption: set align(center)
-}
 
-#let headers(doc) = {
   show heading: set text(14pt)
   show heading.where(level: 1): set align(center)
-  show heading.where(level: 2): set heading(numbering: (num1, num2) => [#num2.]
-)
+  show heading.where(level: 2): set heading(numbering: (num1, num2) => [#num2.])
+  doc
 }
+
 
 #let default_style = (doc_page, )
 

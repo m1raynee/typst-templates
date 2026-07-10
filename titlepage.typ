@@ -1,8 +1,8 @@
 #import "utils.typ": sign, chev
 
 #let titlepage(
-  department: [САПР], discipline, theme,
-  worktype: [лабораторной работе], number,
+  department: [САПР], discipline: none, theme: none,
+  worktype: [лабораторной работе], number: none,
   year: 2026,
   teacher, ..authors,
 
@@ -34,9 +34,11 @@
     #align(center + horizon)[
       ОТЧЁТ
 
-      по #worktype №#number
-      
-      по дисциплине #chev(discipline)
+      по #worktype #number
+
+      #if (discipline != none) [
+        по дисциплине #chev(discipline)
+      ]
 
       Тема: #theme
     ]
