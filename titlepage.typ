@@ -40,7 +40,9 @@
         по дисциплине #chev(discipline)
       ]
 
-      Тема: #theme
+      #if (theme != none) [
+        Тема: #theme
+      ]
     ]
 
     ]
